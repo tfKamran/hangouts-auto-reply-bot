@@ -1,0 +1,32 @@
+{
+  "name": "hangouts-auto-reply-bot",
+  "version": "0.0.1",
+  "description": "A customisable bot that replies on hangouts based on the configuration.",
+  "main": "index.js",
+  "bin": {
+    "hangouts-auto-reply-bot": "index.js"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tfKamran/hangouts-auto-reply-bot.git"
+  },
+  "keywords": [
+    "hangouts",
+    "bot",
+    "reply",
+    "answer"
+  ],
+  "author": "tfKamran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tfKamran/hangouts-auto-reply-bot/issues"
+  },
+  "homepage": "https://github.com/tfKamran/hangouts-auto-reply-bot#readme",
+  "dependencies": {
+    "hangouts-bot": "^0.2.1",
+    "user-config-manager": "0.0.3"
+  }
+}
