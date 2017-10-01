@@ -3,7 +3,7 @@
 const ConfigManager = require('user-config-manager');
 const readline = require('readline-sync');
 
-const configFilePath = require('os').homedir() + '/.HangoutsAutoBot.json';
+const configFilePath = require('os').homedir() + '/.hangouts-auto-reply-bot.json';
 
 if (process.argv.length < 3) {
     console.log(

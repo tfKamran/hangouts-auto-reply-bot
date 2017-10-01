@@ -3,7 +3,7 @@
 const HangoutsBot = require('hangouts-bot');
 const ConfigManager = require('user-config-manager');
 
-const configFilePath = require('os').homedir() + '/.HangoutsAutoBot.json';
+const configFilePath = require('os').homedir() + '/.hangouts-auto-reply-bot.json';
 
 const configuration = ConfigManager(configFilePath, [
     { 'key': 'whois', 'caption': 'Email: ' },
