@@ -22,13 +22,19 @@ bot.on('online', function() {
 });
 
 bot.on('message', function(from, message) {
+    var wordsInMessage = message.toLowerCase().replace(/[^a-z0-9 ]/g, "").split(' ');
+
     Object.keys(configuration).forEach(patterns => {
-        var matches = true;
+        patterns.split('|').forEach(words => {
+            var matches = true;
 
-        patterns.split(',').forEach(pattern => matches = matches && message.toLowerCase().match(pattern + '+'));
+            words.split(',').forEach(word => {
+                matches = matches && wordsInMessage.indexOf(word) > -1
+            });
 
-        if (matches) {
-            bot.sendMessage(from, configuration.prefix + ' ' +  configuration[patterns]);
-        }
+            if (matches) {
+                bot.sendMessage(from, configuration.prefix + ' ' +  configuration[patterns]);
+            }
+        });
     });
 });
