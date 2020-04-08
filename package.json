@@ -4,7 +4,8 @@
   "description": "A customisable bot that replies on hangouts based on the configuration.",
   "main": "index.js",
   "bin": {
-    "hangouts-auto-reply-bot": "index.js"
+    "hangouts-auto-reply-bot": "index.js",
+    "hangouts-auto-reply-bot-configure": "configure.js"
   },
   "scripts": {
     "test": "mocha"
