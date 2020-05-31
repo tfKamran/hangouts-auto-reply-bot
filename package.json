@@ -1,6 +1,6 @@
 {
   "name": "hangouts-auto-reply-bot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A customisable bot that replies on hangouts based on the configuration.",
   "main": "index.js",
   "bin": {
