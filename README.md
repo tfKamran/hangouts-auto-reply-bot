@@ -54,6 +54,10 @@ You can use the following command to list the configured responses:
 
     hangouts-auto-reply-bot-configure list
 
+To clear the configurations, you can use the following command:
+
+    hangouts-auto-reply-bot-configure clear
+
 If you prefer, you can edit the configuration file manually, which is located at `~/.hangouts-auto-reply-bot.json`.
 
 **Note:** You need to restart the bot after you make any change in the configuration. 

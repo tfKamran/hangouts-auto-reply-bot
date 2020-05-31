@@ -33,4 +33,9 @@ switch (process.argv[2]) {
         ]).getConfiguration()
         
         break;
+
+    case 'clear':
+        ConfigManager(configFilePath).clear();
+
+        break;
 }
