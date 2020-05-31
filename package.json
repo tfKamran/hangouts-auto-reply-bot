@@ -28,6 +28,6 @@
   "homepage": "https://github.com/tfKamran/hangouts-auto-reply-bot#readme",
   "dependencies": {
     "hangouts-bot": "^0.2.1",
-    "user-config-manager": "0.0.3"
+    "user-config-manager": "0.0.5"
   }
 }
