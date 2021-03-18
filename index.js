@@ -24,7 +24,7 @@ bot.on('online', function() {
 bot.on('message', function(from, message) {
     var wordsInMessage = message.toLowerCase().replace(/[^a-z0-9 ]/g, "").split(' ');
 
-    Object.keys(configuration).forEach(patterns => {
+    Object.keys(configuration).filter(item => item !== 'password').forEach(patterns => {
         patterns.split('|').forEach(words => {
             var matches = true;
 
